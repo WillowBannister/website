@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block main %}
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Willow WebSite</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About</h2>
+                
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Avatar Image-->
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="static/willow.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Section Content-->
+                    <div class="col">
+                        <div><p class="lead">
+                            Lorem Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed ornare mauris. Nulla vel tincidunt purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit pellentesque sagittis.
+
+                            In id condimentum nunc. Duis aliquet ante nec consectetur tincidunt. Morbi condimentum, odio sed posuere efficitur, elit nibh fringilla massa, vel vulputate mauris neque quis velit. 
+                             </p></div>
+                        <div><p class="lead"></p></div>
+                
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Portfolio Section-->
+        <section class="page-section bg-primary text-white" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <!-- Portfolio Grid Items 1-->
+                <div class="container">
+                    <form action="/Shop" method="POST">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[0].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-0">{{  paints[0].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[1].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-1">{{  paints[1].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[2].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-1">{{  paints[2].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[4].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-0">{{  paints[4].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[5].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-1">{{  paints[5].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{{  paints[6].image }}" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-secondary ml-1">{{  paints[6].product }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+         
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            London
+                            <br />
+                            
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Platinum Acrylic 2020</small></div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+            
+{% endblock %}
